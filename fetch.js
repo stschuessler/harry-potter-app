@@ -1,4 +1,4 @@
-import { doSomethingWithData } from './fetch-use.data'
+import { doSomethingWithData } from './fetch-use-data'
 
 export function fetchExample() {
   fetch('http://hp-api.herokuapp.com/api/characters')
