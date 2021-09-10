@@ -1,3 +1,6 @@
 import { fetchExample } from './fetch.js'
 
-fetchExample()
+function init() {
+  fetchExample()
+}
+init()
