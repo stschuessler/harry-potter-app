@@ -8,5 +8,8 @@
     "dev": "vite"
   },
   "author": "Sarah",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^2.5.6"
+  }
 }
