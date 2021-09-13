@@ -17,17 +17,29 @@ export function doSomethingWithData(data) {
 
   body.appendChild(box)
 
-  nameArray.forEach((element) => {
-    const paragraph = document.createElement('p')
-    paragraph.innerHTML = `Let me introduce you to ${element}`
-    box.appendChild(paragraph)
-  })
+  // nameArray.forEach((element) => {
+  //   const paragraph = document.createElement('p')
+  //   paragraph.innerHTML = `Let me introduce you to ${element}`
+  //   box.appendChild(paragraph)
+  // })
 
-  imageArray.forEach((element) => {
+  // imageArray.forEach((element) => {
+  //   const images = document.createElement('img')
+  //   images.setAttribute('src', `${element}`)
+  //   images.setAttribute('width', '200')
+  //   images.setAttribute('alt', 'A picture of XX')
+  //   box.appendChild(images)
+  // })
+
+  data.forEach((element) => {
+    const paragraph = document.createElement('p')
+    paragraph.innerHTML = `Let me introduce you to ${element.name}`
+    box.appendChild(paragraph)
+
     const images = document.createElement('img')
-    images.setAttribute('src', `${element}`)
+    images.setAttribute('src', `${element.image}`)
     images.setAttribute('width', '200')
-    images.setAttribute('alt', 'A picture of XX')
+    images.setAttribute('alt', `a picture of ${element.name}`)
     box.appendChild(images)
   })
 }
