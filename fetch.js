@@ -6,5 +6,11 @@ export function fetchExample() {
     .then((allData) => {
       console.log('Datanabruf hat funktioniert')
       doSomethingWithData(allData)
+      dosomethingelse(allData)
     })
+}
+
+function dosomethingelse(data) {
+  console.log('the other one')
+  console.table(data)
 }
